@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary mb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/images/logo.png" alt="" width="50" height="20">Rybinsk
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutCity.html">О городе</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FamousPresons.html">Известные личности</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Attractions.html">Достопримечательности</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Кафе и рестораны
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Кафе</a></li>
+                  <li><a class="dropdown-item" href="#">Рестораны</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Фаст-фуд</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary position-relative">
+                    Новости
+                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                      <span class="visually-hidden">New alerts</span>
+                    </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container mt-5 pt-3">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/panorama11.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/panorama22.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/panorama44.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+
+
+      <section class="container pt-5">
+        <p class="h1">Причины посетить наш город</p>
+        <div class="cards">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mt-5">
+                    <div class="card">
+                        <img src="/images/Volga.webp" class="card-img-top img-thumbnail" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Сердце Волги</h5>
+                          <p class="card-text">
+                            Живописная набережная, Рыбинское водохранилище и ГЭС, где можно насладиться величественными речными пейзажами и ощутить мощь главной русской реки.
+                          </p>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#firstCard">Заказать тур</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mt-5">
+                    <div class="card">
+                        <img src="/images/HistoryInStone.jpg" class="card-img-top img-thumbnail" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">История в камне</h5>
+                          <p class="card-text">
+                            Старинные купеческие дома, Спасо-Преображенский собор и музей-заповедник, сохранившие дух XIX века и рассказывающие о прошлом города как столицы бурлаков.
+                          </p>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#firstCard">Заказать тур</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mt-5">
+                    <div class="card">
+                        <img src="/images/Burlak.jpg" class="card-img-top img-thumbnail" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Неожиданные открытия</h5>
+                          <p class="card-text">
+                            Единственный в мире памятник бурлаку, музей Нобелевской премии в здании бывшей «хлебной биржи» и легендарный медведь-символ в краеведческом музее.
+                          </p>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#firstCard">Заказать тур</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mt-5">
+                    <div class="card">
+                        <img src="/images/Streets.jpg" class="card-img-top img-thumbnail" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Тишина и уют</h5>
+                          <p class="card-text">
+                            Атмосфера провинциального городка с улочками, где время течёт медленнее, а гостеприимство местных жителей создаёт ощущение домашнего тепла.
+                          </p>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#firstCard">Заказать тур</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      
+    <!-- Модальное окно -->
+    <div class="modal fade" id="firstCard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Заявка на тур</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <h3>Оставьте заявку и мы свяжемся с вами!</h3>
+              <form action="">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Ваш почтовый адрес</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <div data-mdb-input-init class="form-outline mb-3" style="width: 100%; max-width: 22rem">
+                    <label class="form-label" for="phone">Ваш номер телефона</label>
+                    <input type="text" id="phone" class="form-control" data-mdb-input-mask-init data-mdb-input-mask="+48 999-999-999" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            <button type="submit" class="btn btn-success">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container-fluid">
+      <footer class="pt-5">
+        <div class="row offset-1">
+          <div class="col-lg-2 col-md-6 col-sm-12 mt-sm-5">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-lg-2 col-md-6 col-sm-12 mt-sm-5">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-lg-2 col-md-6 col-sm-12 mt-sm-5">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 d-flex justify-content-lg-center mt-sm-5">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of whats new and exciting from us.</p>
+              <div class="d-flex w-100 gap-2 flex-column">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control col-sm-12" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex justify-content-between pt-4 mt-4 border-top">
+          <p class="text-muted">© Сайт разработан Туркевич А.А. в 2025 году. Все права защищены.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

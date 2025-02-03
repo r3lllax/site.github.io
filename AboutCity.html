@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>О городе</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary mb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/images/logo.png" alt="" width="50" height="10">Rybinsk
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="AboutCity.html">О городе</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FamousPresons.html">Известные личности</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Attractions.html">Достопримечательности</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Кафе и рестораны
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Кафе</a></li>
+                  <li><a class="dropdown-item" href="#">Рестораны</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Фаст-фуд</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary position-relative">
+                    Новости
+                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                      <span class="visually-hidden">New alerts</span>
+                    </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section class="container mt-5 pt-5">
+        <div class="accordion " id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  История основания
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-4">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action" id="list-home-list" data-bs-toggle="tab" href="#list-home" role="tab" aria-controls="list-home" aria-selected="false">XI век</a>
+                            <a class="list-group-item list-group-item-action active" id="list-profile-list" data-bs-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile" aria-selected="true">1504 год</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="tab" href="#list-messages" role="tab" aria-controls="list-messages" aria-selected="false">1777 год</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="tab" href="#list-settings" role="tab" aria-controls="list-settings" aria-selected="false">XX век</a>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                              <p>
+                                Первые упоминания о поселении на месте современного Рыбинска связаны с Усть-Шексной — крупным торгово-ремесленным центром, возникшим в устье реки Шексны при её впадении в Волгу. Археологические находки (монеты, украшения, оружие) свидетельствуют, что здесь пересекались пути купцов из Северной Европы, Волжской Булгарии и Византии. Усть-Шексна была не только перевалочным пунктом, но и стратегическим узлом, контролирующим волжский торговый маршрут. Однако в 1238 году поселение было уничтожено войсками Батыя во время монгольского нашествия. Его остатки, обнаруженные при раскопках, сегодня хранятся в Рыбинском музее-заповеднике как символ «догородской» эпохи.
+                              </p>
+                            </div>
+                            <div class="tab-pane fade active show" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                              <p>
+                                В начале XVI века, при великом князе Василии III, на месте древней Усть-Шексны возникает Рыбная слобода — поселение, официально закреплённое в грамоте 1504 года. Его главной функцией стал промысел и поставка рыбы к царскому столу, особенно ценилась волжская стерлядь, осётр и белорыбица. Слобода быстро росла: местные рыбаки освобождались от налогов в обмен на «рыбный оброк», а к XVII веку здесь уже действовала торговая пристань, связывающая Центральную Россию с Астраханью. В слободе селились не только рыбаки, но и купцы, ремесленники, бурлаки, что превратило её в один из ключевых пунктов на Волге. Интересно, что даже после основания Санкт-Петербурга Рыбная слобода сохранила значение «рыбной житницы» империи.
+                              </p>
+                            </div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                              <p>
+                                При Екатерине II, в рамках губернской реформы, Рыбная слобода получила статус уездного города и новое имя — Рыбинск. Это решение было продиктовано экономической логикой: через город шёл поток зерна из чернозёмных губерний в Санкт-Петербург и Балтику, а также товаров с Макарьевской ярмарки. В Рыбинске строились амбары для хранения хлеба, склады, судоремонтные мастерские и каменные дома в стиле классицизма. К середине XIX века город стал крупнейшим речным портом Верхней Волги: в навигацию сюда причаливали до 2 тыс. судов, а население временно увеличивалось втрое за счёт бурлаков и грузчиков. Именно тогда появились прозвища Рыбинска — «столица бурлаков» и «хлебная пристань России».
+                              </p>
+                            </div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                              <p>
+                                В советский период город дважды менял название, отражая политическую конъюнктуру. В 1946 году он стал Щербаковым в честь Александра Щербакова — партийного деятеля, участвовавшего в организации эвакуации предприятий во время войны. Однако после развенчания культа Сталина в 1957 году городу вернули историческое имя. Вторая переименовывательная волна настигла Рыбинск в 1984 году, когда его превратили в Андропов — дань памяти Юрию Андропову, генсеку, который начинал карьеру в Ярославской области. Это решение вызвало неоднозначную реакцию: многие жители восприняли его как попытку стереть историческую идентичность. В 1989 году, на фоне перестройки и гласности, городу окончательно вернули имя Рыбинск, подчёркивая связь с многовековыми традициями Волжского региона.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Демография
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h2>Население</h2>
+                            <p>Население на конец 2023 г. составляет ≈190 тыс. человек, это 16% от всего населения области. Город является вторым по населению</p>
+                            <div class="progress">
+                                <div
+                                    class="progress-bar bg-success"
+                                    role="progressbar"
+                                    style="width: 16%;"
+                                    aria-valuenow="25"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    Рыбинск(16%)
+                                </div>
+                                <div
+                                    class="progress-bar bg-primary"
+                                    role="progressbar"
+                                    style="width: 48%;"
+                                    aria-valuenow="25"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                Ярославль(48%)
+                                </div>
+                                <div
+                                    class="progress-bar bg-danger"
+                                    role="progressbar"
+                                    style="width: 36%;"
+                                    aria-valuenow="25"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                Остальные(36%)
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="list-group-item">
+                            <h2>Динамика роста населения</h2>
+                            <p>С 1990-х наблюдается постепенное сокращение населения (пик — 251 тыс. в 1989 г.) из-за миграции в крупные города.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h2>Этнический состав</h2>
+                            <p>
+                                98% населения - Русские, остальные 4%  - Украинцы, татары, армяне, азербайджанцы(менее 1% каждый)
+                            </p>
+                            <div class="progress">
+                                <div
+                                    class="progress-bar bg-primary"
+                                    role="progressbar"
+                                    style="width: 96%;"
+                                    aria-valuenow="25"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                Русские(98%)
+                                </div>
+                                <div
+                                    class="progress-bar bg-danger"
+                                    role="progressbar"
+                                    style="width: 4%;"
+                                    aria-valuenow="25"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                Остальные(4%)
+                                </div>
+                                
+                            </div>
+                            <p><strong>Интересный факт:</strong> В XIX веке в Рыбинске существовала крупная немецкая диаспора (купцы и инженеры).</p>
+                        </li>
+                      </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Климат и экология
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <div class="container-fluid">
+                        <h2>Климат и экология</h2>
+                        <img src="images/climat.png" class="img-fluid" alt="" srcset="">
+                        <span class="display-4">Климат: Умеренно-континентальный</span>
+                        <ul>
+                            <li>Зима: Средняя температура января –10°C, возможны морозы до –30°C.</li>
+                            <li>Лето: Средняя температура июля +18°C, максимум до +35°C.</li>
+                        </ul>
+                        Осадки: 600–700 мм в год, частые туманы из-за близости водохранилища.
+                        <div class="contrainer-fluid mt-2">
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Плюсы и минусы</button>
+                              </p>
+                              <div class="row">
+                                <div class="col">
+                                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                    <div class="card card-body">
+                                        <span class="text-danger">Проблемы:</span> Загрязнение воздуха от промышленных предприятий (НПО «Сатурн», Рыбинский завод приборостроения), влияние водохранилища на экосистему.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                    <div class="card card-body">
+                                        <span class="text-success">Достоинства:</span> Богатые лесные массивы, рыбные ресурсы Волги, зоны отдыха на «Рыбинском море».
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Экономика
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+                            <div class="container-fluid">
+                                <h2>Машиностроение</h2>
+                                <p>
+                                    НПО «Сатурн» — флагман отрасли, основанный в 1916 году. Является индустриальным хребтом города. Специализируется на производстве авиационных двигателей для гражданской и военной авиации:
+                                    <ul>
+                                        <li>
+                                            Двигатели SaM146 для регионального самолета Sukhoi Superjet 100, разработанные совместно с французской компанией Safran.
+                                        </li>
+                                        <li>
+                                            Турбореактивные двигатели для истребителей Су-30 и МиГ-29, а также газотурбинные установки для кораблей ВМФ.
+                                        </li>
+                                        <li>
+                                            Экспорт в страны СНГ, Индию, Китай; участие в международных проектах, включая MC-21.
+                                        </li>
+                                    </ul>
+                                </p>
+                                <h2>Судостроение и судовое оборудование</h2>
+                                <p>
+                                    <ul>
+                                        <li>
+                                            Рыбинский судостроительный завод выпускает речные и морские суда, включая танкеры и буксиры.
+                                        </li>
+                                        <li>
+                                            Завод «Вымпел» производит гидроакустические системы для подводных лодок и научно-исследовательских судов.
+                                        </li>
+                                    </ul>
+                                </p>
+                                <h2>Энергетика</h2>
+                                <p>
+                                    Рыбинская ГЭС (построена в 1941–1955 гг.):
+                                    <ul>
+                                        <li>
+                                            Часть каскада Волжских ГЭС; мощность — 346 МВт, ежегодная выработка — 1,2 млрд кВт·ч.
+                                        </li>
+                                        <li>
+                                            Во время ВОВ обеспечивала электроэнергией блокадный Ленинград по «кабелю жизни».
+                                        </li>
+                                        <li>
+                                            Создание Рыбинского водохранилища («Рыбинского моря») привело к затоплению 700 деревень, но дало толчок развитию судоходства и рыболовства.
+                                        </li>
+                                    </ul>
+                                    Альтернативная энергетика: В области развиваются ветряные электростанции (проект «Русский ветер»), использующие открытые пространства водохранилища.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3">
+                            <div class="container">
+                                <h2>Безработица: стабильность и вызовы</h2>
+                                <p>Уровень безработицы — 2,3% (2023 г.), что ниже среднего по Ярославской области (4,5%).</p>
+                                <h3>Причины</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        Наличие градообразующих предприятий (НПО «Сатурн», ГЭС), обеспечивающих до 40% рабочих мест.
+                                    </li>
+                                    <li class="list-group-item">
+                                        Программы переобучения при поддержке Рыбинского государственного авиационного университета.
+
+                                    </li>
+                                  </ul>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+        <div class="container my-5">
+            <h2>Рыбинск на карте</h2>
+            <div class="row">
+              <div class="col-12 col-lg-10 mx-auto">
+                <div class="ratio ratio-16x9 shadow-lg rounded-4">
+                    <iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1586.971808136126!2d38.6333!3d58.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1690000000000!5m2!1sru!2sru&z=5"
+></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+    <div class="container-fluid">
+      <footer class="pt-5">
+        <div class="row offset-1">
+          <div class="col-lg-2 col-md-6 col-sm-12 mt-sm-5">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-lg-2 col-md-6 col-sm-12 mt-sm-5">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-lg-2 col-md-6 col-sm-12 mt-sm-5">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 d-flex justify-content-lg-center mt-sm-5">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of whats new and exciting from us.</p>
+              <div class="d-flex w-100 gap-2 flex-column">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control col-sm-12" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex justify-content-between pt-4 mt-4 border-top">
+          <p class="text-muted">© Сайт разработан Туркевич А.А. в 2025 году. Все права защищены.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
