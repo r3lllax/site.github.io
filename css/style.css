@@ -62,4 +62,52 @@ body {
     overflow-y: auto;
     position: relative;
 }
+.mycard img{
+    transition: all 0.5s ease-in-out;
+}
+.mycard{
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+}
+.mycard:hover{
+    box-shadow: none;
 
+}
+
+.mycard:hover .mycard {
+    filter: brightness(60%);
+}
+
+.mycardp2 {
+    transition: all 0.5s ease-in-out;
+}
+.mycard:hover img{
+    filter: brightness(60%);
+}
+
+.mycard:hover .mycardp2 {
+    transform: scale(2) translateY(-400%);
+    color: white;
+    
+}
+.mycardp2 {
+    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+    transform-origin: top;
+}
+
+.otzivi-lists{
+    list-style-type: none;
+}
+
+.contactUs{
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    background: #0d6efd;
+    color: white;
+}
+.contactUs img{
+    max-width: 206px;
+}
