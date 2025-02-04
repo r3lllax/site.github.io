@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary mb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/images/logo.png" alt="" width="50" height="20">Rybinsk
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutCity.html">О городе</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FamousPresons.html">Известные личности</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Attractions.html">Достопримечательности</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="Restaurants.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Кафе и рестораны
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Restaurants.html#cafe">Кафе</a></li>
+                  <li><a class="dropdown-item" href="Restaurants.html#rest">Рестораны</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Restaurants.html#fast-food">Фаст-фуд</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary position-relative">
+                    Новости
+                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                      <span class="visually-hidden">New alerts</span>
+                    </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section class="mt-5 pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="h2">Кафе и рестораны Рыбинска</p>
+                    <p>Добро пожаловать в гид по лучшим заведениям Рыбинска! Здесь вы найдете разнообразные кафе, рестораны и места для быстрого перекуса, которые удовлетворят любой вкус и бюджет.</p>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-12">
+                    <h2 id="cafe" class="display-2">Кафе</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+                    <div class="card mycard w-100" style="width: 18rem;" onclick="openModal1()">
+                        <img class="card-img-top rounded" src="images/Rest/Tasty.webp" alt="Card image cap">
+                        <p class="text-center mycardp2">Кафе "Вкусный берег"</p>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+                    <div class="card mycard w-100" style="width: 18rem;" onclick="openModal2()">
+                        <img class="card-img-top rounded" src="images/Rest/num7.jpg" alt="Card image cap">
+                        <p class="text-center mycardp2">"Кофейня №7"</p>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+                    <div class="card mycard w-100" style="width: 18rem;" onclick="openModal3()">
+                        <img class="card-img-top rounded" src="images/Rest/tea.jpg" alt="Card image cap">
+                        <p class="text-center mycardp2">"Чайная Лавка"</p>
+                      </div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-12">
+                    <h2 id="rest" class="display-2">Рестораны</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+                    <div class="card mycard w-100" style="width: 18rem;" onclick="openModal4()">
+                        <img class="card-img-top rounded" src="images/Rest/Volga.webp" alt="Card image cap">
+                        <p class="text-center mycardp2">Ресторан "Волга"</p>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+                    <div class="card mycard w-100" style="width: 18rem;" onclick="openModal5()">
+                        <img class="card-img-top rounded" src="images/Rest/LaPizza.avif" alt="Card image cap">
+                        <p class="text-center mycardp2">"La Piazza"</p>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+                    <div class="card mycard w-100" style="width: 18rem;" onclick="openModal6()">
+                        <img class="card-img-top rounded" src="images/Rest/grouzinskiy.webp" alt="Card image cap">
+                        <p class="text-center mycardp2">"Грузинский дворик"</p>
+                      </div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-12">
+                    <h2 id="fast-food" class="display-2">Фаст-фуд</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+                    <div class="card mycard w-100" style="width: 18rem;" onclick="openModal7()">
+                        <img class="card-img-top rounded" src="images/Rest/BurgerKing.jpg" alt="Card image cap">
+                        <p class="text-center mycardp2">"Бургер Кинг"</p>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+                    <div class="card mycard w-100" style="width: 18rem;" onclick="openModal8()">
+                        <img class="card-img-top rounded" src="images/Rest/Shaurma24.jpg" alt="Card image cap">
+                        <p class="text-center mycardp2">"Шаурма 24"</p>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+                    <div class="card mycard w-100" style="width: 18rem;" onclick="openModal9()">
+                        <img class="card-img-top rounded" src="images/Rest/PizzaExpress.jpg" alt="Card image cap">
+                        <p class="text-center mycardp2">"Пицца Экспресс"</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-flex flex-column align-items-center">
+        <div class="display-6 my-5">Не нашли своё любимое заведение?</div>
+        <div class="container-fluid contactUs w-75">
+            <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-12 col-sm-12 d-flex flex-column justify-content-end h-md-100 align-items-center py-5 fs-3">
+                        <p>Если вы не увидели здесь своё любимое кафе или ресторан, сообщите нам об этом! Мы с удовольствием добавим его в наш гид, чтобы сделать подборку ещё полезнее для всех. </p>
+                        <p>Оставьте свой адрес электронной почты в контактной форме <a href="#contactForm" type="button" class="btn btn-success" data-bs-dismiss="modal">снизу</a> и мы свяжемся с вами!</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center"><img src="images/contactUs.png" class="img-fluid" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+<!--Модалки-->
+    <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title display-6" id="modalLabel">Кафе "Вкусный берег"</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <div class="contrainer">
+                <p>
+                    <strong>Рейтинг:</strong> ⭐⭐⭐⭐☆ (4.5/5)
+                </p>
+                <p>
+                    <strong>Кухня:</strong> европейская
+                </p>
+                <p>
+                    <strong>Особенности:</strong> уютный интерьер, десерты собственного приготовления, бесплатный Wi-Fi
+                </p>
+                <p>
+                    <strong>Меню:</strong> свежая выпечка, салаты, паста, кофе-спешиалти
+                </p>
+                <p><strong>Отзывы:</strong></p>
+                <ul class="otzivi-lists px-0">
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Отличное место для утреннего кофе!" – Анна П.</li>
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Очень вкусные десерты и приятная атмосфера." – Михаил Р.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button class="btn btn-primary" data-bs-target="#OtzivModal" data-bs-toggle="modal" data-bs-dismiss="modal">Оставить отзыв</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title display-6" id="modalLabel">"Кофейня №7"</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <div class="contrainer">
+                <p>
+                    <strong>Рейтинг:</strong> ⭐⭐⭐⭐☆ (4.3/5)
+                </p>
+                <p>
+                    <strong>Кухня:</strong> кофейные напитки, легкие закуски
+                </p>
+                <p>
+                    <strong>Особенности:</strong> атмосферный интерьер в стиле лофт, крафтовая выпечка
+                </p>
+                <p>
+                    <strong>Меню:</strong> капучино, латте, круассаны, сэндвичи
+                </p>
+                <p><strong>Отзывы:</strong></p>
+                <ul class="otzivi-lists px-0">
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Лучший капучино в городе!" – Иван К.</li>
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Уютное место для работы с ноутбуком." – Ольга С.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button class="btn btn-primary" data-bs-target="#OtzivModal" data-bs-toggle="modal" data-bs-dismiss="modal">Оставить отзыв</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title display-6" id="modalLabel">"Чайная Лавка"</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <div class="contrainer">
+                <p>
+                    <strong>Рейтинг:</strong> ⭐⭐⭐⭐☆ (4.4/5)
+                </p>
+                <p>
+                    <strong>Кухня:</strong> чайные напитки, вегетарианские закуски
+                </p>
+                <p>
+                    <strong>Особенности:</strong> спокойная атмосфера, чайные церемонии
+                </p>
+                <p>
+                    <strong>Меню:</strong> матча, улун, смузи, фруктовые десерты
+                </p>
+                <p><strong>Отзывы:</strong></p>
+                <ul class="otzivi-lists px-0">
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Отличное место для утреннего кофе!" – Анна П.</li>
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Идеальное место для уединения с книгой." – Артём Н.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button class="btn btn-primary" data-bs-target="#OtzivModal" data-bs-toggle="modal" data-bs-dismiss="modal">Оставить отзыв</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+    
+      <div class="modal fade" id="myModal4" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title display-6" id="modalLabel">Ресторан "Волга"</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <div class="contrainer">
+                <p>
+                    <strong>Рейтинг:</strong> ⭐⭐⭐⭐⭐ (4.8/5)
+                </p>
+                <p>
+                    <strong>Кухня:</strong> русская, европейская
+                </p>
+                <p>
+                    <strong>Особенности:</strong> панорамный вид на реку, живая музыка по вечерам
+                </p>
+                <p>
+                    <strong>Меню:</strong> стейки, рыбные блюда, авторские коктейли
+                </p>
+                <p><strong>Отзывы:</strong></p>
+                <ul class="otzivi-lists px-0">
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Великолепный вид и отличная кухня!" – Дмитрий Л.</li>
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Обслуживание на высоте, рекомендую для романтического ужина." – Наталья И.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button class="btn btn-primary" data-bs-target="#OtzivModal" data-bs-toggle="modal" data-bs-dismiss="modal">Оставить отзыв</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myModal5" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title display-6" id="modalLabel">"La Piazza"</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <div class="contrainer">
+                <p>
+                    <strong>Рейтинг:</strong> ⭐⭐⭐⭐☆ (4.4/5)
+                </p>
+                <p>
+                    <strong>Кухня:</strong> итальянская
+                </p>
+                <p>
+                    <strong>Особенности:</strong> печь для пиццы на дровах, открытая кухня
+                </p>
+                <p>
+                    <strong>Меню:</strong> пицца, паста, тирамису
+                </p>
+                <p><strong>Отзывы:</strong></p>
+                <ul class="otzivi-lists px-0">
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Настоящая итальянская пицца, как в Риме!" – Елена С</li>
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Паста карбонара — просто шедевр." – Владимир П.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button class="btn btn-primary" data-bs-target="#OtzivModal" data-bs-toggle="modal" data-bs-dismiss="modal">Оставить отзыв</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="modal fade" id="myModal6" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title display-6" id="modalLabel">"Грузинский дворик"</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <div class="contrainer">
+                <p>
+                    <strong>Рейтинг:</strong> ⭐⭐⭐⭐☆ (4.5/5)
+                </p>
+                <p>
+                    <strong>Кухня:</strong> грузинская
+                </p>
+                <p>
+                    <strong>Особенности:</strong> традиционная грузинская музыка, открытая кухня
+                </p>
+                <p>
+                    <strong>Меню:</strong> хачапури, шашлык, чурчхела
+                </p>
+                <p><strong>Отзывы:</strong></p>
+                <ul class="otzivi-lists px-0">
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Вкуснейшие хинкали и гостеприимный персонал." – Алина В.</li>
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Отличный выбор вина и атмосферный интерьер." – Константин Д.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button class="btn btn-primary" data-bs-target="#OtzivModal" data-bs-toggle="modal" data-bs-dismiss="modal">Оставить отзыв</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="myModal7" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title display-6" id="modalLabel">"Бургер Кинг"</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <div class="contrainer">
+                <p>
+                    <strong>Рейтинг:</strong> ⭐⭐⭐⭐☆ (4.2/5)
+                </p>
+                <p>
+                    <strong>Кухня:</strong> американская, стрит-фуд
+                </p>
+                <p>
+                    <strong>Особенности:</strong> быстрый сервис, возможность заказа на вынос
+                </p>
+                <p>
+                    <strong>Меню:</strong> бургеры, картофель фри, милкшейки
+                </p>
+                <p><strong>Отзывы:</strong></p>
+                <ul class="otzivi-lists px-0">
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Сочные бургеры и большие порции!" – Сергей Т.</li>
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Быстрое обслуживание и вкусные соусы." – Мария Г.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button class="btn btn-primary" data-bs-target="#OtzivModal" data-bs-toggle="modal" data-bs-dismiss="modal">Оставить отзыв</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="modal fade" id="myModal8" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title display-6" id="modalLabel">"Шаурма 24"</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <div class="contrainer">
+                <p>
+                    <strong>Рейтинг:</strong> ⭐⭐⭐⭐☆ (4.1/5)
+                </p>
+                <p>
+                    <strong>Кухня:</strong> ближневосточная
+                </p>
+                <p>
+                    <strong>Особенности:</strong> круглосуточный режим работы
+                </p>
+                <p>
+                    <strong>Меню:</strong> шаурма, кебаб, лаваш с начинками
+                </p>
+                <p><strong>Отзывы:</strong></p>
+                <ul class="otzivi-lists px-0">
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Отлично перекусить ночью после вечеринки!" – Ольга М.</li>
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Всегда свежие ингредиенты и хорошие порции." – Алексей З.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button class="btn btn-primary" data-bs-target="#OtzivModal" data-bs-toggle="modal" data-bs-dismiss="modal">Оставить отзыв</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="modal fade" id="myModal9" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title display-6" id="modalLabel">"Пицца Экспресс"</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <div class="contrainer">
+                <p>
+                    <strong>Рейтинг:</strong> ⭐⭐⭐⭐☆ (4.3/5)
+                </p>
+                <p>
+                    <strong>Кухня:</strong> итальянская, стрит-фуд
+                </p>
+                <p>
+                    <strong>Особенности:</strong> быстрая доставка, выгодные комбо-наборы
+                </p>
+                <p>
+                    <strong>Меню:</strong> пицца, панини, газированные напитки
+                </p>
+                <p><strong>Отзывы:</strong></p>
+                <ul class="otzivi-lists px-0">
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Быстрая доставка и горячая пицца — что ещё нужно?" – Андрей Л.</li>
+                    <li class="otzivi-list"><img src="images/user.png" width="50px">"Отличные акции и скидки по будням." – Виктория П.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button class="btn btn-primary" data-bs-target="#OtzivModal" data-bs-toggle="modal" data-bs-dismiss="modal">Оставить отзыв</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="OtzivModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title display-6" id="modalLabel">Отзыв</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <div class="contrainer">
+                <div class="input-group d-flex flex-lg-row flex-md-column flex-sm-column">
+                    <label for="name" class="form-label">Ваше имя и фамилия(Чтобы остаться анонимным не заполняйте поле)</label>
+                    <input type="text" id="name" aria-label="First name" class="form-control w-100" placeholder="Имя">
+                    <input type="text" aria-label="Last name" class="form-control w-100" placeholder="Фамилия">
+                  </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Ваш адрес электронной почты</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="почта@example.com">
+                  </div>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Оценка заведения</option>
+                    <option value="Positive">Положительная</option>
+                    <option value="Negative">Отрицательная</option>
+                    <option value="Neutral">Затрудняюсь сказать</option>
+                  </select>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Опишите ваши впечатления от завдения</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" id="showToast">Оставить отзыв</button>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast align-items-center text-white bg-info border-0" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
+          <div class="d-flex">
+            <div class="toast-body">
+                ✅ Вы успешно оставили отзыв!
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+
+    <div class="container-fluid">
+      <footer class="pt-5">
+        <div class="row offset-1">
+          <div class="col-lg-2 col-md-6 col-sm-12 mt-sm-5">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-lg-2 col-md-6 col-sm-12 mt-sm-5">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-lg-2 col-md-6 col-sm-12 mt-sm-5">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 d-flex justify-content-lg-center mt-sm-5">
+            <form id="contactForm">
+              <h5>Контактная форма</h5>
+              <p>Оставьте свой адрес электронной почты</p>
+              <div class="d-flex w-100 gap-2 flex-column">
+                <label for="newsletter1" class="visually-hidden">Адрес электронной почты</label>
+                <input id="newsletter1" type="text" class="form-control col-sm-12" placeholder="почта@example.com">
+                <button class="btn btn-primary" type="button">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex justify-content-between pt-4 mt-4 border-top">
+          <p class="text-muted">© Сайт разработан Туркевич А.А. в 2025 году. Все права защищены.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
