@@ -23,7 +23,7 @@ function UpdateNews() {
                     <div class="col-6 col-lg-4 w-s-100">
                         <div id="${element.id}" class="card mb-4 newsCard" rel="newsCard" onclick=ShowDetails(${element.id})>
                             <img src="${element.ImagePath}" class="img-fluid">
-                            <div class="card-body">
+                            <div class="card-body cbt">
                                 <h2 style="display-6">${element.Head}</h2>
                                 <p class="text-muted">${element.Date}</p>
                                 <p class="text-muted">${element.Comments.length ? 'Комментариев: ' + element.Comments.length : "Нет комментариев"}</p>

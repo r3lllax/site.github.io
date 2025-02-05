@@ -26,7 +26,7 @@ function UpdateCards(){
             });
             let Cards = `
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
-                <h1 class="text-center mb-5 display-4 col-12">Выдающиеся люди, связанные с городом</h1>
+                <h1 class="text-center mb-5 display-4 col-12 text-light fpH">Выдающиеся люди, связанные с городом</h1>
                 ${CardList}
             </div>
             `
@@ -97,7 +97,7 @@ function openModal(id) {
 
             document.getElementById("myModal").innerHTML=`
                 <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered">
-                    <div class="modal-content">
+                    <div class="modal-content modalka">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">${person.Head} (${person.YearsOfLife})</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
