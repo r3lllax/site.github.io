@@ -4,7 +4,7 @@ window.onload = function () {
 
 function UpdateCards(){
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'FamousPersones.json');
+    xhr.open('GET', 'famousPersones.json');
     xhr.onload = function () {
         if (xhr.status === 200) {
             let news = JSON.parse(xhr.responseText);    
@@ -41,7 +41,7 @@ function UpdateCards(){
 
 function openModal(id) {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'FamousPersones.json');
+    xhr.open('GET', 'famousPersones.json');
     xhr.onload = function () {
         if (xhr.status === 200) {
             let person = JSON.parse(xhr.responseText);     
