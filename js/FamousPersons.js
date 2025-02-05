@@ -30,7 +30,7 @@ function UpdateCards(){
                 ${CardList}
             </div>
             `
-            document.getElementById("cardsContainer").innerHTML+=Cards
+            document.getElementById("cardsContainer").innerHTML=Cards
             
         } else {
             console.error('Ошибка загрузки файла');
