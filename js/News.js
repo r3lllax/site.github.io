@@ -10,6 +10,7 @@ window.onload = function () {
         }
     }, 500);
 };
+
 function UpdateNews() {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'news.json');
