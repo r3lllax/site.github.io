@@ -1,5 +1,15 @@
-window.onload = UpdateNews;
-
+window.onload = function () {
+    UpdateNews();
+    setTimeout(function () {
+        var grid = document.querySelector('#newsContainer');
+        if (grid) {
+            new Masonry(grid, {
+                itemSelector: '.col-6',
+                percentPosition: true
+            });
+        }
+    }, 500);
+};
 function UpdateNews() {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'news.json');
@@ -121,13 +131,6 @@ function ShowDetails(id){
             
             document.getElementById("detailPage").innerHTML = detailCard;
             document.querySelector('.display-2').scrollIntoView();
-            
-            // Инициализация Masonry после загрузки контента
-            var grid = document.querySelector('#newsContainer');
-            new Masonry(grid, {
-                itemSelector: '.col-6', 
-                percentPosition: true
-            });
         } else {
             console.error('Ошибка загрузки файла');
         }
