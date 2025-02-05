@@ -1,14 +1,6 @@
 window.onload = function () {
     UpdateNews();
-    setTimeout(function () {
-        var grid = document.querySelector('#newsContainer');
-        if (grid) {
-            new Masonry(grid, {
-                itemSelector: '.col-6',
-                percentPosition: true
-            });
-        }
-    }, 500);
+    
 };
 
 function UpdateNews() {
@@ -48,6 +40,15 @@ function UpdateNews() {
         }
     };
     xhr.send();
+    setTimeout(function () {
+        var grid = document.querySelector('#newsContainer');
+        if (grid) {
+            new Masonry(grid, {
+                itemSelector: '.col-6',
+                percentPosition: true
+            });
+        }
+    }, 500);
 }
 
 function ShowDetails(id){
