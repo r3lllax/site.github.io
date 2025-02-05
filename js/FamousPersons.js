@@ -26,7 +26,7 @@ function UpdateCards(){
             });
             let Cards = `
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
-                <h1 class="text-center mb-5 display-4">Выдающиеся люди, связанные с городом</h1>
+                <h1 class="text-center mb-5 display-4 col-12">Выдающиеся люди, связанные с городом</h1>
                 ${CardList}
             </div>
             `
