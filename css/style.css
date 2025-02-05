@@ -143,6 +143,17 @@ body {
     max-height: 500px;
 }
 
+.mxc{
+    min-width: 244px;
+    max-width: fit-content;
+}
+
+@media (min-width: 313px) and (max-width: 767.98px) {
+    .w-s-100 {
+      width: 100% !important;
+    }
+  }
+
 @keyframes myAnim {
 	0% {
 		transform: scale(1);

@@ -9,9 +9,9 @@ function UpdateNews() {
             let newsCards = "";
             news.forEach(element => {
                 let card =  `
-                    <div class="col-6 col-lg-4">
+                    <div class="col-6 col-lg-4 w-s-100">
                         <div id="${element.id}" class="card mb-4 newsCard" rel="newsCard" onclick=ShowDetails(${element.id})>
-                            <img src="${element.ImagePath}" class="mxc card-img-top img-fluid">
+                            <img src="${element.ImagePath}" class="img-fluid">
                             <div class="card-body">
                                 <h2 style="display-6">${element.Head}</h2>
                                 <p class="text-muted">${element.Date}</p>
@@ -58,10 +58,10 @@ function ShowDetails(id){
                     let li = `
                     <li class="comments-list d-flex my-3">
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-sm-12 col-md-2 d-flex justify-content-center">
                                 <img src="images/user.png" class="img-thumbnail img-fluid" alt="">
                             </div>
-                            <div class="col-10">
+                            <div class="col-sm=12 col-md-10">
                                 <div class="row">
                                     <div class="col-12 comments-list-des">
                                         ${news.Comments[i].Author} - ${news.Comments[i].CommentDate}
@@ -90,9 +90,9 @@ function ShowDetails(id){
                         <button type="button" class="btn-close" onclick=UpdateNews()></button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-6 text-start text-muted">Дата:${news.Date}</div>
-                    <div class="col-6 text-end text-muted">Идентификатор новости: ${news.id}</div>
+                <div class="row d-flex flex-column flex-md-row">
+                    <div class="col-6 text-start text-muted">Дата: ${news.Date}</div>
+                    <div class="col-6 text-muted text-start text-md-end">Идентификатор новости: ${news.id}</div>
                 </div>
                 <div class="row">
                     <p class="display-3 fw-bold">${news.Head}</p>
@@ -120,6 +120,7 @@ function ShowDetails(id){
             `
             
             document.getElementById("detailPage").innerHTML = detailCard;
+            document.querySelector('.display-2').scrollIntoView();
             
             // Инициализация Masonry после загрузки контента
             var grid = document.querySelector('#newsContainer');
