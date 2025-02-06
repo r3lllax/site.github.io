@@ -119,10 +119,13 @@ function UpdateRests() {
             let Cafes = ''
             let Rests = ''
             let FastFood = ''
-
+            let i = 0
             rests.forEach(element => {
+                
+                if(i > 100){i=0}
+                i += 50
                 let card = `
-                        <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
+                        <div data-aos-delay="${i}" data-aos="fade-${element.id%2==0?"down":"down"}" data-aos-duration="1200" class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
                             <div class="card mycard w-100" style="width: 18rem;" onclick="openModal(${element.id})">
                                 <img class="card-img-top rounded" src="${element.ImagePath}" alt="Card image cap">
                                 <p class="text-center mycardp2">${element.Title}</p>

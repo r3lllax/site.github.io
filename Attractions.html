@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Достопримечательности</title>
 </head>
@@ -55,10 +56,10 @@
         </div>
       </nav>
 
-      <section class="container mt-3 pt-3 w-100">
+      <section data-aos="fade-up" data-aos-duration="1000" class="container mt-3 pt-3 w-100">
         <div class="bd-example mt-5">
             <div class="row d-flex flex-column flex-md-row">
-              <div class="col-md-4 position-relative d-none d-md-block">
+              <div data-aos="fade-right" data-aos-duration="1000" class="col-md-4 position-relative d-none d-md-block">
                 <nav id="navbar-example3" class="navbar navbar-light flex-column">
                   <a class="navbar-brand h2" href="#">Достопримечательности</a>
                   <nav class="nav nav-pills flex-column">
@@ -73,7 +74,7 @@
                   </nav>
                 </nav>
               </div>
-              <div class="col-md-8 hei200 position-relative">
+              <div data-aos="fade-left" data-aos-duration="1000" class="col-md-8 hei200 position-relative">
                 <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" class="scrollspy-example-2">
                     <h2 id="item-1">Рыбинская набережная</h2>
                     <p>
@@ -309,6 +310,10 @@
       </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>

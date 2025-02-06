@@ -4,16 +4,19 @@ window.onload = function () {
 
 function UpdateCards(){
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'famousPersones.json');
+    xhr.open('GET', 'FamousPersones.json');
     xhr.onload = function () {
         if (xhr.status === 200) {
             let news = JSON.parse(xhr.responseText);    
             let CardList = ""
+            let i = 0
             news.forEach(element => {
+                if(i > 450){i=0}
+                i += 150
                 let Card = `
-                <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <img src="${element.MainImagePath}" class="card-img-top" alt="${element.Head}" loading="lazy">
+                <div data-aos-delay="${i}" data-aos="zoom-in" data-aos-duration="1000" class="col">
+                    <div class="card h-100 shadow-sm" >
+                        <img src="${element.MainImagePath}" class="card-img-top" alt="${element.Head}" loading="lazy" >
                         <div class="card-body">
                             <h5 class="card-title">${element.Head}</h5>
                             <p class="card-text">${element.MiniHead}</p>
@@ -25,9 +28,14 @@ function UpdateCards(){
                 CardList+=Card
             });
             let Cards = `
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
-                <h1 class="text-center mb-5 display-4 col-12 text-light fpH">Выдающиеся люди, связанные с городом</h1>
-                ${CardList}
+            <div data-aos="fade-down" data-aos-duration="1000" class="row">
+                <h1 data-aos="zoom-in" data-aos-duration="1200" class="text-center mb-5 display-4 col-12 text-light fpH">Выдающиеся люди, связанные с городом</h1>
+                <div data-aos="fade-down" data-aos-duration="1000" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                    
+                        ${CardList}
+                    
+                </div>
+                
             </div>
             `
             document.getElementById("cardsContainer").innerHTML=Cards
@@ -41,7 +49,7 @@ function UpdateCards(){
 
 function openModal(id) {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'famousPersones.json');
+    xhr.open('GET', 'FamousPersones.json');
     xhr.onload = function () {
         if (xhr.status === 200) {
             let person = JSON.parse(xhr.responseText);     

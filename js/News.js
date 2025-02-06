@@ -10,9 +10,12 @@ function UpdateNews() {
         if (xhr.status === 200) {
             let news = JSON.parse(xhr.responseText);     
             let newsCards = "";
+            let i = 0
             news.forEach(element => {
+                if(i > 2500){i=0}
+                i += 100
                 let card =  `
-                    <div class="col-6 col-lg-4 w-s-100">
+                    <div data-aos-delay="${i}" data-aos="flip-${element.id%2==0?"up":"down"}" data-aos-duration="1000" class="col-6 col-lg-4 w-s-100">
                         <div id="${element.id}" class="card mb-4 newsCard" rel="newsCard" onclick=ShowDetails(${element.id})>
                             <img src="${element.ImagePath}" class="img-fluid">
                             <div class="card-body cbt">
@@ -96,32 +99,32 @@ function ShowDetails(id){
             }
             
             let detailCard = `
-            <div class="container">
-                <div class="row">
+            <div data-aos-delay="0" data-aos="zoom-in" data-aos-duration="1000" class="container">
+                <div data-aos="fade-left" data-aos-duration="500" class="row">
                     <div class="col-12">
                         <button type="button" class="btn-close" onclick=UpdateNews()></button>
                     </div>
                 </div>
-                <div class="row d-flex flex-column flex-md-row">
+                <div data-aos="fade-right" data-aos-duration="1000" class="row d-flex flex-column flex-md-row">
                     <div class="col-6 text-start text-muted">Дата: ${news.Date}</div>
                     <div class="col-6 text-muted text-start text-md-end">Идентификатор новости: ${news.id}</div>
                 </div>
-                <div class="row">
+                <div data-aos="fade-right" data-aos-duration="3000" class="row">
                     <p class="display-3 fw-bold">${news.Head}</p>
                     <p>${news.MiniHead}</p>
                     <p>Автор: ${news.Author}</p>
                 </div>
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
+                <div data-aos="zoom-in" data-aos-duration="1000" class="row">
+                    <div  class="col-12 d-flex justify-content-center">
                         <img src="${news.ImagePath}" alt="" srcset="" class="img-fluid">
                     </div>
                 </div>
-                <div class="row mt-5">
+                <div data-aos="fade-up" data-aos-duration="1000" class="row mt-5">
                     <p>
                         ${news.Description}
                     </p>
                 </div>
-                <div class="row">
+                <div data-aos="flip-up" data-aos-duration="1000" class="row">
                     <h2>Комментарии:</h2>
                     <ul id="comments-lists" class="comments-lists comments">
                     ${ul}

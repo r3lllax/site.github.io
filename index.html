@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Главная</title>
 </head>
@@ -55,8 +56,8 @@
         </div>
       </nav>
 
-      <section class="container mt-5 pt-3">
-        <p class="display-4 text-center m-5">Туристическйи портал города Рыбинск</p>
+      <section data-aos="zoom-in"  data-aos-duration="1000" class="container mt-5 pt-3">
+        <p id="Head" class="display-4 text-center m-5">Туристический портал города Рыбинск</p>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -86,12 +87,12 @@
       </section>
 
 
-      <section class="container pt-5">
+      <section  class="container pt-5">
         <p class="h1">Причины посетить наш город</p>
-        <div class="cards">
+        <div  class="cards">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mt-5">
-                    <div class="card">
+                <div  class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mt-5">
+                    <div data-aos="fade-up"  data-aos-duration="4000" class="card">
                         <img src="/images/Volga.webp" class="card-img-top img-thumbnail bg-transparent" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Сердце Волги</h5>
@@ -102,8 +103,8 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mt-5">
-                    <div class="card">
+                <div  class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mt-5">
+                    <div data-aos="fade-down"  data-aos-duration="4000" class="card">
                         <img src="/images/HistoryInStone.jpg" class="card-img-top img-thumbnail bg-transparent" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">История в камне</h5>
@@ -114,8 +115,8 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mt-5">
-                    <div class="card">
+                <div  class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mt-5">
+                    <div data-aos="fade-up" data-aos-duration="4000" class="card">
                         <img src="/images/Burlak.jpg" class="card-img-top img-thumbnail bg-transparent" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Неожиданные открытия</h5>
@@ -126,8 +127,8 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mt-5">
-                    <div class="card">
+                <div  class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mt-5">
+                    <div data-aos="fade-down" data-aos-duration="4000" class="card">
                         <img src="/images/Streets.jpg" class="card-img-top img-thumbnail bg-transparent" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Тишина и уют</h5>
@@ -234,5 +235,9 @@
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

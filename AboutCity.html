@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>О городе</title>
 </head>
@@ -57,7 +58,7 @@
       </nav>
 
     <section class="container mt-5 pt-5">
-        <div class="accordion " id="accordionPanelsStayOpenExample">
+        <div data-aos="fade-right"  data-aos-duration="1000" class="accordion " id="accordionPanelsStayOpenExample">
             <div class="accordion-item bgt">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -307,7 +308,7 @@
               </div>
         </div>
         
-        <div class="container my-5">
+        <div data-aos="fade-left"  data-aos-duration="1000" class="container my-5">
             <h2>Рыбинск на карте</h2>
             <div class="row">
               <div class="col-12 col-lg-10 mx-auto">
@@ -378,5 +379,9 @@
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

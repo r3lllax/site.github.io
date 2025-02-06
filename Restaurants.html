@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Заведения</title>
 </head>
@@ -55,7 +56,7 @@
         </div>
       </nav>
 
-    <section id="contentSection" class="mt-5 pt-4">
+    <section data-aos="fade-down" data-aos-duration="1000" id="contentSection" class="mt-5 pt-4">
       <div class="text-center">
         <div class="spinner-border" role="status">
           <span class="visually-hidden">Loading...</span>
@@ -63,7 +64,7 @@
       </div>
     </section>
 
-    <section class="d-flex flex-column align-items-center my-5">
+    <section  data-aos="fade-left" data-aos-duration="1200" class="d-flex flex-column align-items-center my-5">
         <div class="display-6 ">Не нашли своё любимое заведение?</div>
         <div class="container-fluid contactUs w-100 m-5">
             <div class="row align-items-center">
@@ -71,7 +72,7 @@
                         <p>Если вы не увидели здесь своё любимое кафе или ресторан, сообщите нам об этом! Мы с удовольствием добавим его в наш гид, чтобы сделать подборку ещё полезнее для всех. </p>
                         <p>Оставьте свой адрес электронной почты в контактной форме <a href="#contactForm" type="button" class="btn btn-success" data-bs-dismiss="modal">снизу</a> и мы свяжемся с вами!</p>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center"><img src="images/contactUs.png" class="img-fluid" alt=""></div>
+                    <div data-aos="zoom-in" data-aos-duration="1200" class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center"><img src="images/contactUs.png" class="img-fluid" alt=""></div>
             </div>
         </div>
     </section>
@@ -190,6 +191,10 @@
       </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/script.js"></script>
     <script src="js/Restaurants.js"></script>
 </body>
