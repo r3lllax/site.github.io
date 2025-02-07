@@ -4,11 +4,11 @@ window.onload = function () {
 };
 
 function UpdateNews() {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'news.json');
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            let news = JSON.parse(xhr.responseText);     
+    fetch('news.json')
+    .then(response => response.json())
+    .then(data => {
+            console.log(data)
+            let news = data;     
             let newsCards = "";
             let i = 0
             news.forEach(element => {
@@ -38,20 +38,19 @@ function UpdateNews() {
                 itemSelector: '.col-6', 
                 percentPosition: true
             });
-        } else {
-            console.error('Ошибка загрузки файла');
-        }
-    };
-    xhr.send();
-    setTimeout(function () {
-        var grid = document.querySelector('#newsContainer');
-        if (grid) {
-            new Masonry(grid, {
-                itemSelector: '.col-6',
-                percentPosition: true
-            });
-        }
-    }, 500);
+            setTimeout(function () {
+                var grid = document.querySelector('#newsContainer');
+                if (grid) {
+                    new Masonry(grid, {
+                        itemSelector: '.col-6',
+                        percentPosition: true
+                    });
+                }
+            }, 500);
+    })
+    .catch(error => console.error('Ошибка GET:', error));
+    
+    
 }
 
 function ShowDetails(id){
