@@ -44,7 +44,7 @@ function UpdateCards(){
 }
 
 function openModal(id) {
-    fetch('/public/famousPersones.json')
+    fetch('famousPersones.json')
     .then(response => response.json())
     .then(data => {
         let person = data;     
