@@ -27,7 +27,7 @@ function UpdateCards(){
                 CardList+=Card
             });
             let Cards = `
-            <div data-aos="fade-down" data-aos-duration="1000" class="row">
+            <div data-aos="fade-down" data-aos-duration="1000" class="row d-flex justify-content-center">
                 <h1 data-aos="zoom-in" data-aos-duration="1200" class="text-center mb-5 display-4 col-12 text-light fpH">Выдающиеся люди, связанные с городом</h1>
                 <div data-aos="fade-down" data-aos-duration="1000" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
                     
