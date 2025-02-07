@@ -44,11 +44,10 @@ function UpdateCards(){
 }
 
 function openModal(id) {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'famousPersones.json');
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            let person = JSON.parse(xhr.responseText);     
+    fetch('/public/famousPersones.json')
+    .then(response => response.json())
+    .then(data => {
+        let person = data;     
             for(let i = 0;i<person.length;i++){
                 if(person[i].id == id){
                     person = person[i]
@@ -131,10 +130,7 @@ function openModal(id) {
     `
     var myModal = new bootstrap.Modal(document.getElementById('myModal'));
     myModal.show();
-        } else {
-            console.error('Ошибка загрузки файла');
-        }
-    };
-    xhr.send();
-    
-  }
+
+    })
+    .catch(error => console.error('Ошибка GET:', error));
+}
