@@ -3,11 +3,10 @@ window.onload = function () {
 };
 
 function UpdateCards(){
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'famousPersones.json');
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            let news = JSON.parse(xhr.responseText);    
+    fetch('famousPersones.json')
+    .then(response => response.json())
+    .then(data => {
+        let news = data;    
             let CardList = ""
             let i = 0
             news.forEach(element => {
@@ -39,12 +38,9 @@ function UpdateCards(){
             </div>
             `
             document.getElementById("cardsContainer").innerHTML=Cards
-            
-        } else {
-            console.error('Ошибка загрузки файла');
-        }
-    };
-    xhr.send();
+        
+    })
+    .catch(error => console.error('Ошибка GET:', error));
 }
 
 function openModal(id) {
